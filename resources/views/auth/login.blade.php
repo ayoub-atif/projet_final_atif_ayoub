@@ -8,7 +8,8 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="login_part_text text-center">
                         <div class="login_part_text_iner">
-                            <h2>New to our Shop?</h2>
+                            <h2>ARE U NEW IN OUR SHOP?</h2>
+                            <H3>SIGN UP NOW</H3>
                             <p>There are advances being made in science and technology
                                 everyday, and a good example of this is the</p>
                             <a href="/register" class="btn_3">Create an Account</a>

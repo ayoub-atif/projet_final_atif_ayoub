@@ -8,10 +8,10 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="login_part_text text-center">
                         <div class="login_part_text_iner">
-                            <h2>New to our Shop?</h2>
+                            <h2>Welcome to our Shop</h2>
                             <p>There are advances being made in science and technology
                                 everyday, and a good example of this is the</p>
-                            <a href="/login" class="btn_3">Loguin</a>
+                            <a href="/login" class="btn_3">Log in</a>
                         </div>
                     </div>
                 </div>

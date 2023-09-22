@@ -10,7 +10,7 @@
             <th scope="col">Email</th>
             <th scope="col">Role</th>
             <th scope="col">Modifier</th>
-            <th scope="col">Supperimer</th>
+            <th scope="col">delete</th>
         </tr>
     </thead>
         <tbody>

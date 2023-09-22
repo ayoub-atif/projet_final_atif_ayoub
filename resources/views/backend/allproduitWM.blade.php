@@ -85,10 +85,10 @@
                 <th scope="col">#</th>
                 <th scope="col">Titre</th>
                 <th scope="col">Prix</th>
-                <th scope="col">Image</th>
+                <th scope="col">Image <img src="" alt=""></th>
                 <th scope="col">Stock</th>
                 <th scope="col">Modifier</th>
-                <th scope="col">Supperimer</th>
+                <th scope="col">delete</th>
             </tr>
         </thead>
 

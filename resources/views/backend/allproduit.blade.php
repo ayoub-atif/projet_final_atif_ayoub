@@ -88,7 +88,7 @@
                 <th scope="col">Image</th>
                 <th scope="col">Stock</th>
                 <th scope="col">Modifier</th>
-                <th scope="col">Supperimer</th>
+                <th scope="col">delete</th>
             </tr>
         </thead>
 
@@ -124,7 +124,7 @@
                             @csrf
                             @method('DELETE')
                             <button type="submit" class=" btn btn-danger text-white "
-                                onclick="return confirm('Êtes-vous sûr de vouloir supprimer?')"><i
+                                onclick="return confirm('are u sure?')"><i
                                     class="fa-solid fa-trash-can"></i></button>
                         </form>
                     </td>
