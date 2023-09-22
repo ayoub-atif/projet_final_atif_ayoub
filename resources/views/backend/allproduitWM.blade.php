@@ -25,7 +25,7 @@
                 <div class="modal-body">
                     <form action='{{ route('backendW.storproduit') }} ' method="POST" enctype="multipart/form-data">
                         @csrf
-                        <div class="mb-3">
+                        <div class="mb-3"> 
                             <label for="name" class="form-label">Titre</label>
                             <input type="text" name="titre" class="form-control" id="titre"
                                 aria-describedby="titre">
@@ -69,11 +69,11 @@
                         </div>
 
                     </form>
-                </div>
+                </div> 
 
             </div>
         </div>
-    </div>
+    </div>  
 
 
     
@@ -126,11 +126,11 @@
 
                             @if ($produit->createur)
                             <button disabled type="submit" class=" btn btn-danger text-white "
-                            onclick="return confirm('Êtes-vous sûr de vouloir supprimer?')"><i
+                            onclick="return confirm('are u sure?')"><i
                                 class="fa-solid fa-trash-can"></i></button>
                             @else
                             <button type="submit" class=" btn btn-danger text-white "
-                            onclick="return confirm('Êtes-vous sûr de vouloir supprimer?')"><i
+                            onclick="return confirm('are u sure?')"><i
                                 class="fa-solid fa-trash-can"></i></button>
                             @endif
 

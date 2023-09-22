@@ -21,14 +21,14 @@ class ProduitController extends Controller
     }
 
     public function updateproduit(Request $request, Produit $produit)
-    {
+    {    
         
         request()->validate([
             "titre" => ["required"],
             "prix" => ["required"],
             "stock" => ["required"],
             "categorie" => ["required"],
-        ]);
+        ]); 
 
         $image = $request->file("image");
 

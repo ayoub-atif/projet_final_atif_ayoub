@@ -80,9 +80,9 @@
 
                             <div class=" position-relative bg-black divpanier">
 
-                                <span class="text-light panier">4</span>
+                                
 
-                                <a href="/panier"><i class="fas fa-cart-plus "></i></a>
+                                <a href="/panier"><i class="fa-solid fa-shop"></i></a>
 
                             </div>
 
@@ -111,7 +111,7 @@
                                         </div>
                                     @else
                                         <a href="/login">
-                                            <i class="fa-solid fa-right-to-bracket"></i>
+                                            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #f2023a;"></i>
                                         </a>
                                     @endauth
                                 </div>

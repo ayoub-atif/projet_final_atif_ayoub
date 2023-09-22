@@ -125,7 +125,7 @@
                             @method('DELETE')
                             <button type="submit" class=" btn btn-danger text-white "
                                 onclick="return confirm('are u sure?')"><i
-                                    class="fa-solid fa-trash-can"></i></button>
+                                    class="fa-solid fa-trash-can"></i></button> 
                         </form>
                     </td>
 
