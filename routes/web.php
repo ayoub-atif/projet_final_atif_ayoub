@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\ProduitWCntoller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoleeController;
+use App\Http\Controllers\showController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,7 +44,8 @@ Route::get('/allproduitWM', function () {
     return view('backend.allproduitWM');
 })->middleware(['auth', 'role:webmaster'])->name('backend.allproduitWM');
 
-
+// ! home controller
+Route::get("/", [HomeController::class, "index"])->name('home.index');
 Route::middleware('auth' , 'role:webmaster' )->group(function () {    
     // page webmaster Produit
     Route::get("/allproduitWM", [ProduitWCntoller::class, "index"])->name('backend.allproduitWM');
@@ -68,9 +72,10 @@ Route::middleware('auth' , 'role:admin' )->group(function () {
     Route::post("/backend/produit/store", [ProduitController::class, "storproduit"])->name('backend.storproduit');
 });
 
+// mail:
+Route::post('/sendmail', [ContactController::class, 'store'])->name('mail.contact');
 
-
-
+Route::get("/show/{produit}", [showController::class, "showitem"])->name('show.produit');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -79,7 +84,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy'); 
 });
 
 require __DIR__.'/auth.php';

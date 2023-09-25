@@ -14,7 +14,7 @@
         </tr>
     </thead>
         <tbody>
-
+                                                    
             @foreach ($allusers as $alluser )
             @if (($alluser->name)=="admin")
                 

@@ -18,7 +18,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p1.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>4,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
@@ -26,7 +26,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p2.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>4,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
@@ -42,7 +42,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p4.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>1,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
@@ -50,7 +50,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p5.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>1,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
@@ -58,7 +58,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p6.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>4,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
@@ -66,7 +66,7 @@ class ProduitSeeder extends Seeder
             'prix'=>50,
             'image'=>'p7.jpg',
             'createur'=>1,
-            'stock'=>10,
+            'stock'=>2,
             'categorie'=>'Chaise en plastique',
         ]);
         Produit::create([
