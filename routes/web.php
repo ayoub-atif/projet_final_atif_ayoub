@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::put('/', function () {
     return view('frontend.home');
 })->name('frontend.home');
 
@@ -76,6 +76,7 @@ Route::middleware('auth' , 'role:admin' )->group(function () {
 Route::post('/sendmail', [ContactController::class, 'store'])->name('mail.contact');
 
 Route::get("/show/{produit}", [showController::class, "showitem"])->name('show.produit');
+Route::post('/messagerie/subscribeduser' , [ContactController::class , "sendmail"])->name("sendmail.boite");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
